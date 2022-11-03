@@ -1,0 +1,105 @@
+
+
+@import url('https://fonts.googleapis.com/css2?family=Island+Moments&family=Rubik+Beastly&display=swap');
+
+fieldset {
+ width: 400px;
+}
+
+.center{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+
+.footer {
+   position: fixed;
+   left: 0;
+   bottom: 0;
+   width: 100%;
+   background-color: rgb(175, 45, 35);
+   color: rgb(0, 0, 0);
+   text-align: center;
+}
+
+h1{
+  font-family: 'Island Moments', cursive;
+  font-size: 80px;
+  color: lightskyblue;
+}
+
+h5{
+  color: green;
+}
+
+body{
+  margin: 0;
+  font-family: "Lato", sans-serif;
+  background-color: #d6cdcd;
+}
+button{
+    border-radius: 05px;
+    background-color: darkcyan;
+}
+a{
+  color: aqua;
+  text-decoration: none;
+}
+.sidebar {
+  margin: 0;
+  padding: 0;
+  width: 200px;
+  background-color: #d6cdcd;
+  position: fixed;
+  height: 100%;
+  overflow: none;
+}
+
+.sidebar a {
+  display: block;
+  color: black;
+  padding: 16px;
+  text-decoration: none;
+}
+
+.sidebar a.active {
+  font-family: 'Times New Roman', Times, serif, cursives;
+  font-size: 25px;
+  background-color: rgb(175, 45, 35);
+  color: rgb(0, 0, 0);
+}
+
+.sidebar a:hover:not(.active) {
+  background-color: rgb(119, 119, 119);
+  color: black
+}
+
+div.content {
+  margin-left: 200px;
+  padding: 1px 16px;
+  height: 1000px;
+}
+
+@media screen and (max-width: 700px) {
+  .sidebar {
+      width: 100%;
+      height: auto;
+      position: relative;
+  }
+
+  .sidebar a {
+      float: left;
+  }
+
+  div.content {
+      margin-left: 0;
+  }
+}
+
+@media screen and (max-width: 350px) {
+  .sidebar a {
+      text-align: center;
+      float: none;
+  }
+}
